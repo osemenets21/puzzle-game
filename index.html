@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Puzzle</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="oclock">
+        <div class="oclock__minuts">01:00</div>
+      </div>
+      <div class="oclock__btn">
+        <button class="btn oclock__btn_start" type="button">Start game</button>
+        <button class="btn oclock__btn_check" type="button" disabled>
+          Check result
+        </button>
+        <button class="btn oclock__btn_newGame" type="button">New game</button>
+      </div>
+      <div class="puzzle__container">
+        <button type="button" class="hiht">HIHT ?</button>
+        <img src="images/google_icon-icons.com_62736.png" alt="Google-logo" class="google-hiht">
+        <div class="puzzle__first boxes">
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+          <div class="img-together"><div class="pzl img"></div></div>
+        </div>
+        <div class="puzzle__second boxes">
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+          <div class="fillBox img-together"></div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-block modal-sure">
+          <p>
+            You still have time, you sure? <span class="modal-time">00:00</span>
+          </p>
+          <form>
+            <button type="button" class="btn btn-closeSure">Close</button>
+            <button type="button" class="btn btn-check">Check</button>
+          </form>
+        </div>
+        <div class="modal-block modal-lose">
+          <p>It's a pity, but you lost</p>
+          <form>
+            <button type="button" class="btn btn-closeLose">Close</button>
+          </form>
+        </div>
+        <div class="modal-block modal-win">
+          <p>Woohoo, well done, do it!</p>
+          <form>
+            <button type="button" class="btn btn-closeWin">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.oclock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.oclock__minuts,
+.oclock__secunds,
+.colon {
+    font-size: 70px;
+}
+
+.oclock__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oclock__btn_check {
+    margin: 0 20px;
+}
+
+.btn {
+    padding: 8px;
+    background-color: rgb(211, 86, 33);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    min-width: 86px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: green;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.puzzle__container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.puzzle__first,
+.puzzle__second {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 20px 0 black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hiht{
+    width: 100px;
+    height: 25px;
+    background-color: lightgreen;
+    position: absolute;
+    top: -104px;
+    left: -165px;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.hiht:hover {
+    color: white;
+    background-color: darkgreen;
+    transition: all .3s;
+
+}
+
+.google-hiht {
+    position: absolute;
+    top: -68px;
+    left: -166px;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.img {
+    width: 74.75px;
+    height: 74.75px;
+    /* background-image: url(images/google_icon-icons.com_62736.png); */
+    border: 1px solid white;
+    background-size: 411%;
+    background-repeat: no-repeat;
+}
+
+.pzl {
+    width: 74.75px;
+    height: 74.75px;
+    /* color: transparent;
+    font-size: 2px; */
+}
+
+.fillBox {
+    width: 74.75px;
+    height: 74.75px;
+}
+
+.pzl[value="1"] {
+    background-position: 0 0;
+}
+
+.pzl[value="2"] {
+    background-position: -74.75px 0;
+}
+
+.pzl[value="3"] {
+    background-position: -149.5px 0;
+}
+
+.pzl[value="4"] {
+    background-position: -224.25px 0;
+}
+
+.pzl[value="5"] {
+    background-position: 0 -74.75px;
+}
+
+.pzl[value="6"] {
+    background-position: -74.75px -74.75px;
+}
+
+.pzl[value="7"] {
+    background-position: -149.5px -74.75px;
+}
+
+.pzl[value="8"] {
+    background-position: -224.25px -74.75px;
+}
+
+.pzl[value="9"] {
+    background-position: 0 -149.5px;
+}
+
+
+.pzl[value="10"] {
+    background-position: -74.75px -149.5px;
+}
+
+.pzl[value="11"] {
+    background-position: -149.5px -149.5px;
+}
+
+.pzl[value="12"] {
+    background-position: -224.25px -149.5px;
+}
+
+.pzl[value="13"] {
+    background-position: 0 -224.25px;
+}
+
+.pzl[value="14"] {
+    background-position: -74.75px -224.25px;
+}
+
+.pzl[value="15"] {
+    background-position: -149.5px -224.25px;
+}
+
+.pzl[value="16"] {
+    background-position: -224.25px -224.25px;
+}
+
+/* Styles for modal blocks */
+
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-block {
+    display: none;
+    width: 500px;
+    height: 175px;
+    margin: 0 auto;
+    padding: 30px 0 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 5px;
+}
+
+.modal-block p {
+    padding: 20px;
+    border-top: 1px solid rgb(199, 198, 198);
+    border-bottom: 1px solid rgb(199, 198, 198);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-block form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
